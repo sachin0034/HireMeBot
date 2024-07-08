@@ -1,9 +1,18 @@
-# main.py
-
 import mysql.connector
 import json
 import argparse
 import random
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Get database connection details from environment variables
+db_user = os.getenv('DB_USER')
+db_password = os.getenv('DB_PASSWORD')
+db_host = os.getenv('DB_HOST')
+db_database = os.getenv('DB_DATABASE')
 
 # Parse command line arguments
 parser = argparse.ArgumentParser(description="Generate questions based on tech stack and total questions.")
@@ -14,10 +23,10 @@ args = parser.parse_args()
 
 # Connect to the MySQL database
 con = mysql.connector.connect(
-    user="root",
-    password="",
-    host="localhost",
-    database="techquestions"  # Replace with the actual name of your database
+    user=db_user,
+    password=db_password,
+    host=db_host,
+    database=db_database
 )
 
 cursor = con.cursor()

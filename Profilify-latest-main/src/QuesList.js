@@ -152,7 +152,7 @@ useEffect(() => {
 
   const fetchQuestions = async () => {
     try {
-      const response = await fetch('http://localhost:5000/generateQuestions', {
+      const response = await fetch('https://hiremebot.onrender.com/generateQuestions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -176,7 +176,7 @@ useEffect(() => {
 
   const fetchTableNames = async () => {
     try {
-      const response = await fetch('http://localhost:5000/getTableNames');
+      const response = await fetch('https://hiremebot.onrender.com/getTableNames');
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
@@ -202,7 +202,7 @@ useEffect(() => {
           user_response: result.user_response,
         }));
 
-        const response = await fetch('http://localhost:5000/submitResults', {
+        const response = await fetch('https://hiremebot.onrender.com/submitResults', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

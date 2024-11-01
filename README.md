@@ -1,7 +1,4 @@
 # AI Interview Avatar
-
-![Demo Video](Demo Video.mp4)
-
 AI Interview Avatar is an interactive platform designed to simulate technical interviews. This AI-driven avatar allows users to select a technology stack, customize the number of questions, and take a simulated interview. Questions range from easy to hard, drawn from a pre-built database. After the interview, the AI evaluates responses and provides a score based on a comparison of the user's answers with the ideal solutions from the database.
 
 ---
@@ -15,7 +12,7 @@ AI Interview Avatar is an interactive platform designed to simulate technical in
 
 ## 📹 Demo
 
-[Watch the Demo Video](E:\HireMeBot\Demo Video.mp4)
+[Watch the Demo Video](Demo_Video.mp4)
 
 ## 📂 Project Structure
 

@@ -15,7 +15,7 @@ AI Interview Avatar is an interactive platform designed to simulate technical in
 
 ## 📹 Demo
 
-[Watch the Demo Video](link-to-demo-video)
+[Watch the Demo Video](E:\HireMeBot\Demo Video.mp4)
 
 ## 📂 Project Structure
 
